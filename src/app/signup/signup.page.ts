@@ -105,6 +105,7 @@ verifyOTP() {
   console.log(data)
   this.confirmotp=false;
   console.log("Succesfull");
+    this.presentToast("OTP verification Success");
   this.lowershow=true;
   }).catch(err => {
     this.presentToast("Invalid OTP");
